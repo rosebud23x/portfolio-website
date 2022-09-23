@@ -28,50 +28,30 @@ h4 {
   font-weight: 400;
 }
 
-.button.contact {
-  background-color: #DACCE5;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
+.button {
   display: inline-block;
-  font-size: 16px;
+  background-color: #736C7B;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2x solid #994c30;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #736C7B;
+  text-transform: uppercase;
+  border: 2px solid #736C7B;
 }
 
 .button.contact:hover {
-  background-color: #8B7999;
-  color: #ffffff;
-}
-
-.button.learn {
-  background-color: #DACCE5;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.button.learn:hover {
-  background-color: #8B7999;
-  color: #ffffff;
-}
-
-.button.resume {
-  background-color: #DACCE5;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.button.resume:hover {
-  background-color: #8B7999;
+  background-color: #736C7B;
   color: #ffffff;
 }

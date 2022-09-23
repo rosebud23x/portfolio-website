@@ -1,5 +1,77 @@
-<style>
-  body {
-    background-color: LightGrey;
-  }
-</style>
+body {
+  background-color: #FEFCFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #8B7999;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+.button.contact {
+  background-color: #DACCE5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button.contact:hover {
+  background-color: #8B7999;
+  color: #ffffff;
+}
+
+.button.learn {
+  background-color: #DACCE5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button.learn:hover {
+  background-color: #8B7999;
+  color: #ffffff;
+}
+
+.button.resume {
+  background-color: #DACCE5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button.resume:hover {
+  background-color: #8B7999;
+  color: #ffffff;
+}

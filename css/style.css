@@ -230,6 +230,11 @@ Medium devices (640px and larger)
   text-align: center;
 }
 
+#hero {
+  margin: 0;
+  padding: 0.67em 0;
+}
+
 }
 
 /* ==============================

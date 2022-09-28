@@ -282,6 +282,134 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 }
+
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.col-lg-1 {
+  width: 100%;
+  float: left;
+}
+
+.col-lg-3 {
+  width: 25%;
+  float: left;
+}
+
+.col-lg-9 {
+  width: 75%;
+  float: left;
+}
+
+.col-lg-7 {
+  width: 60%;
+  float: left;
+}
+
+.col-lg-5 {
+  width: 40%;
+  float: left;
+}
+
+.col-lg-6 {
+  width: 50%;
+  float: left;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-pic {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact .container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#story .row {
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+
+#skills .row {
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+
+#tools .row {
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+
+body {
+  font-size: 18px;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.logo {
+  max-width: 250px;
+  max-height: 64px;
+  width: auto;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+/* this makes the list items show up next to each other */
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+nav > ul {
+  list-style-type: none;
+
+  /* padding: 0; */
+  margin: 1em 0;
+}
+
+main {
+  padding-top: 120px;
+}
+
+#story {
+  margin: auto;
+}
+
+#picrow {
+  display: flex;
+  align-items: center;
+}
+
+#userstory {
+  font-weight: 700;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */

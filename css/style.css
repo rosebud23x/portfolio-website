@@ -237,7 +237,27 @@ Medium devices (640px and larger)
 
 .col-md-6 {
   width: 50%;
+  padding: 10px;
 }
+
+.logo {
+  max-width: 250px;
+  max-height: 64px;
+  width: auto;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+.navtoggle li:not(:last-child) {
+   display: inline-block;
+ }
+
+ .navtoggle li:last-child {
+    display: none;
+  }
+
 
 [class*="col-"] {
   float: left;
@@ -247,7 +267,13 @@ Medium devices (640px and larger)
   content: "";
   display: table;
   clear: both;
+  padding: 10px;
 }
+
+main {
+  padding-top: 120px;
+}
+
 
 }
 

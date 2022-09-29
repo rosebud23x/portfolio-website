@@ -85,16 +85,16 @@ h4 {
     margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
-
 .button {
   display: inline-block;
   background-color: #736C7B;
   color: #ffffff;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2x solid #994c30;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
 }
 
 .button:hover {
@@ -199,6 +199,39 @@ nav > ul > li > a:active {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+.berlin-illustration {
+width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* ==============================

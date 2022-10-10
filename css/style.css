@@ -303,7 +303,17 @@ nav > ul > li {
   display: inline-block;
 }
 
+/* this makes the list items show up next to each other */
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
 
+.navtoggle li:last-child {
+  display: none;
+}
+
+nav > ul {
+  list-style-type: none;
 
 main {
   padding-top: 0px;
@@ -316,6 +326,8 @@ main {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+
   header {
     text-align: unset;
     padding: 20px 0 13px;

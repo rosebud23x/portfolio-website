@@ -272,7 +272,7 @@ Medium devices (640px and larger)
  body {
    background-color: #FEFCFF;
    font-family: 'Source Sans Pro', sans-serif;
-   font-size: 18px;
+   font-size: 14px;
    line-height: 1.6;
    color: #8B7999;
    text-align: center;
@@ -327,6 +327,10 @@ main {
   content: "";
   clear: both;
   display: table;
+}
+
+.social-media {
+    text-align: center;
 }
 
 

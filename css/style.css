@@ -1,3 +1,10 @@
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
+* {
+  box-sizing: border-box;
+}
+
 /*
 Colors used
 Primary Color: Dark Purple #8B7999
@@ -8,137 +15,159 @@ Button: Darker Purple #736c7b
 */
 
 
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.logo {
-  text-align: center;
-  max-width: 250px;
-}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
 
 body {
-  background-color: #FEFCFF;
+  background-color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #8B7999;
 }
-
-
-img {
-  width: 100%;
-}
-
-header {
-  background-color: #e3e6cc;
-  padding: 10px 0 4px;
-   margin: 0px;
-   border-bottom: 0px solid #4a4a4a;
-   text-align: center; /* Centers text */
-   -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-   -moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-   box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.25);
-   position:relative;
-}
-
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-  text-align: center; /* Centers text */
 }
+
+
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
-  text-align: center; /* Centers text */
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 400;
-  text-align: center; /* Centers text */
+  margin-top: -8px;
 }
+
+#about-page h3 { margin-top: 0;}
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
-  text-align: center; /* Centers text */
 }
 
-.d-block {
-	display: block;
-}
-.d-flex {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+
+/*setting images to full-width*/
+img {
+  width: 100%;
 }
 
-.row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+/*change the default link color to your primary color (copied from your comments at the top of the document)*/
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #94996a;
+  text-decoration: none; /* Underlining when hovering over a link */
 }
 
+/*style the current nav item pink*/
+.active a {
+    color: #ff8285;
+    text-decoration: underline;
+}
+
+a:active { /* selected link */
+  color: #ff8285;
+}
+
+/*Pseudo classes for Accessibility for Across the Web*/
+a:hover,
+a:focus {
+  color: #ff8285;
+  text-decoration: none;
+}
+
+
+/*CSS code for the button class*/
 .button {
   display: inline-block;
   background-color: #736C7B;
-  color: #ffffff;
+  color: white;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2x solid #994c30;
-  transition-duration: 0.2s;
+  border-bottom: 2px solid ##3F3C44;
+  transition: 0.8s opacity;
 }
 
 .button:hover {
+  opacity: 0.8;
+  color: #ffffff;
+  background-color: #736C7B;
+  text-decoration: none;
+}
+
+.button:active {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
+
+/*button rules for the mailto button*/
 .button.contact {
   background-color: transparent;
-  color: #736C7B;
+  color: #8B7999;
   text-transform: uppercase;
-  border: 2px solid #736C7B;
+  border: 2px solid #8B7999;
+  transition: 0.8s opacity;
 }
 
+/*button class hover and active state*/
+
 .button.contact:hover {
-  background-color: #736C7B;
+  opacity: 0.8;
+  background-color: #ff8285;
   color: #ffffff;
 }
 
-svg {
-    max-width: 32px;
+.button.contact:active {
+  opacity: 0.8;
+  background-color: #ff8285;
+  color: #ffffff;
 }
 
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*stye the page sections*/
 
-/* Layout styling */
-
-.container {
-  padding: 0 15px;
+/*style the <header> element*/
+header {
+  background-color: #e3e6cc;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
-.row {
-    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+/*style the logo*/
+header .logo {
+  max-width: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+/*Navigation Styling*/
+nav {
+  display: inline-block;
 }
 
 nav > ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 nav > ul > li {
@@ -146,76 +175,88 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    background-color: inherit;
-    color: #8B7999;
-}
-
-nav > ul > li > a:visited {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    background-color: inherit;
-    color: #FF8285;
-}
-
-nav > ul > li > a:hover {
-    padding: 0 15px;
-    text-transform: uppercase;
-    background-color: #FF8285;
-    color: #ffffff;
-    font-weight: 700;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #94996a;
-    transition: 0.2s opacity;
-}
-
-nav > ul > li > a:active {
-    padding: 0 15px;
-    text-transform: uppercase;
-    background-color: #54e9d1;
-    color: #7e49f6;
-    font-weight: 700;
-    padding-bottom: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #7e49f6;
-    transition: 0.2s opacity;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #8B7999;
 }
 
 #hero {
   background-color: #e3e6cc;
-}
-
-#hero h1 {
-    text-align: center;
-    margin: 0;
-    padding: 0.67em 0;
-}
-
-#hero {
-  background-color: #e3e6cc;
-  padding: 20px 0;
+  padding: 40px 0;
   display: inline-block;
   width: 100%;
 }
 
-.berlin-illustration {
-width: 100%;
-max-width: 100%;
-height: auto;
+#hero span {
+  display: block;
+}
+
+#contact {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/*Style the social icons*/
+.social {
+  list-style-type: none;
+  padding: 0;
+  margin-left: -10px;
+}
+
+.social li {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.social img {
+  height: 32px;
+  width: 32px;
+}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 20px; }
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*SVG anamation*/
+.svg-animation {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
 }
 
 .sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*single line...
+.sun {
   animation: 4s color-change infinite alternate linear;
 }
+*/
 
 @keyframes cloud-move {
   from {transform: translate(0,50px);}
@@ -223,8 +264,18 @@ height: auto;
 }
 
 .cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*single line...
+.cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
+*/
 
 @keyframes cloud-move-reverse {
   from {transform: translate(446px,48px);}
@@ -234,165 +285,77 @@ height: auto;
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*Media Queries*/
 
-[class*="col-"] {
-  float: left;
-}
-
+/*clear page flow*/
 .row::after {
   content: "";
-  display: table;
   clear: both;
+  display: table;
+}
+
+/*float all columns left*/
+[class*="col-"] {
   padding: 10px;
-}
-
-.copyright {
-    text-align: center;
-}
-
-.button-contact {
-    text-align: center;
 }
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
- }
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
- nav {
-   width: auto;
-   float: right;
-   margin-top: -10px;
- }
+  nav {
+    width: auto;
+    float: right;
+  }
 
- body {
-   background-color: #FEFCFF;
-   font-family: 'Source Sans Pro', sans-serif;
-   font-size: 14px;
-   line-height: 1.6;
-   color: #8B7999;
-   text-align: center;
- }
-
- #hero span {
-  display: block;
-  text-align: center;
-}
-
-#hero {
-  margin: 0;
-  padding: 0.67em 0;
-}
-
-.col-md-6 {
-  width: 50%;
-  padding: 10px;
-}
-
-.logo {
-  max-width: 250px;
-  max-height: 64px;
-  width: auto;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-/* this makes the list items show up next to each other */
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-
-.navtoggle li:last-child {
-  display: none;
-}
-
-nav > ul {
-  list-style-type: none;
-
-main {
-  padding-top: 0px;
-}
-
-[class*="col-"] {
-  float: left;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.social-media {
-    align-content: center;
-}
-
+  .col-md-6 {
+    width: 50%;
+    float: left;
+    padding-bottom: 40px;
+  }
 
 }
+
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
-  h1 {
-    line-height: 100%;
-    font-size: 3em;
-    font-weight: 900;
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  h2 {
-    line-height: normal;
-    font-size: 2em;
-    font-weight: 600;
-  }
-
-  h3 {
-    line-height: normal;
-    font-size: 1.75em;
-    font-weight: 400;
-  }
-
-  h4 {
-    line-height: normal;
-    font-size: 1em;
-    font-weight: 300;
-  }
-
-  li p {
-    font-size: 1.75em;
-  }
-
-  .logo {
-    margin-top: 10px;
-  }
-
   .col-lg-7 {
     width: 60%;
-    float: left;
   }
 
   .col-lg-5 {
     width: 40%;
   }
 
-
-
-  .info {
-    margin-top: 150px;
-    border: 3px solid #272727;
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+    padding-bottom: 40px;
+  }
+  .col-lg-8 {
+    width: 40%;
+    float: right;
   }
 
-  img {
-    width: 75%;
+   #about-page .col-md-6 {
+     width: 100%;
   }
-
-
-
 }

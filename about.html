@@ -1,135 +1,140 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="Sample meta description - index page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/fav/fav.png" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>About Kirsten Vandepas</title>
   </head>
+  <body id="about-page">
+    <!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+            <a href="index.html">
+			 <img src="img/logo.png" class="logo" alt="Logo" >
+            </a>
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html">Work</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+		</div>
+	</header>
 
-  <body>
-   <header>
-     <div class="container">
-       <div class="navtoggle" id="myNavtoggle">
-           <a href="index.html">
-              <img src="img/logo.svg" alt="Logo" class="logo" >
-          </a>
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-<main>
-  <div id="hero">
-     <div class="container">
-    <!-- Hero Section -->
-    <div>
-      <h1> Hello! I'm Kirsten, a Graphic &amp; UI Designer </h1>
-      <picture>
-  <img src="img/me.jpg"
-      style="max-width: 400px"
-      alt="About Picture">
-</picture>
-      <p> I've had numerous training through Graphic Design, Visual Effects, Print Media and UI Design. I love to work in design and learn the process all around it - which usually leads me into learning a whole other media. </p>
-    <div class="button-contact">
-      <a href="files/2022_Resume_Kirsten_Vandepas.pdf" class="button contact">Here's my resume</a>
-</div>
-    </div><!-- Who-end -->
-
-
-    <div><!-- Skill and Tools Column -->
-    <div id="skills-and-tools" class="container center">
-      <h2>Skills & Tools</h2>
-
-      <div id="skills" class="center col-xs-1 col-md-6 col-lg-6 col-xl-6">
-        <h3>Skills</h3>
-        <ul>
-          <li>UX Research</li>
-          <li>UI Design</li>
-          <li>Competitive Analysis</li>
-          <li>User Personas</li>
-          <li>User Flows</li>
-          <li>Wireframes</li>
-          <li>Prototype</li>
-          <li>User Testing</li>
-          <li>User Interviews</li>
-          <li>Story Telling</li>
-          <li>Video Editing</li>
-          <li>Grahpic Design</li>
-          <li>Visual Effects</li>
-          <li>Compositing</li>
-          <li>Animation</li>
-          <li>Illustrations</li>
-          <li>Print Media</li>
-          <li>Frontend Web Development</li>
-        </ul>
-      </div>
-    </div><!-- Skills-end -->
-  <div><!-- Tools -->
-      <div id="tools" class="center col-xs-1 col-md-6 col-lg-6 col-xl-6">
-        <h3>Tools</h3>
-        <ul>
-          <li>Figma</li>
-          <li>Adobe XD</li>
-          <li>Adobe Premiere Pro</li>
-          <li>Adobe Photoshop</li>
-          <li>Adobe Illustrator</li>
-          <li>Adobe After Effects</li>
-          <li>Adobe InDesign</li>
-          <li>Adobe Bridge</li>
-          <li>NukeX</li>
-          <li>FlexiDesign</li>
-          <li>Lightwave</li>
-        </ul>
-      </div><!-- Tools-end -->
-    </div><!-- Skills-amd-tolls-End -->
-  </div>
-</div>
-</div>
-</main>
+    <main>
+        <!-- For the hero section -->
+        <div id="hero" style="margin-bottom: 40px;">
+            <div class="container">
+                <h1>About me</h1>
+                <p>
+                    I've had numerous training through Graphic Design, Visual Effects, Print Media and UI Design. I love to work in design and learn the process all around it - which usually leads me into learning a whole other media.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div><!--For the image, My Story and Skills and tools sections-->
+                <div>
+                    <picture><!--For students, the images below should be updated with real images-->
+                      <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
+                      <img src="img/me.jpg" style="max-width: 400px" alt="My Image">
+                    </picture>
+                    <div><!--For My Story and Skills and tools sections-->
+                        <div class="column col-lg-7"><!--Column one-->
+                            <h2>My story</h2>
+                            <p>I’ve been interested in all things creative ever since I saw my first Ghibli movie - from there I knew I had to be an artist. I spent most of my teens drawing and deciding which creative path to follow, and during this time I took a two year course for Graphic Design. After I graduated, I moved to Florida and attended the DAVE School (Digital Animation Visual Effects) where I majored in Visual Effects and interned with The Asylum.</p>
+                            <p>After working in visual effects I went back to Graphic Design for a few years before deciding to enhance my skills further. Looking around I came across UI/UX design and was immediately taken, quickly enrolling at CareerFoundry to pursue my new dream. Now that I have completed my course, I am ready to tackle my new career!</p>
+                            <a href="files/2022_Resume_Kirsten_Vandepas.pdf" target="_blank">Download my resume</a>
+                        </div>
+                        <div class="column col-lg-8"><!--Column two-->
+                            <h2>Skills &amp; Tools</h2>
+                            <div class="column col-md-6"><!--Column two, row one-->
+                                <h3>Relevant Skills</h3>
+                                <ul>
+                                  <li>UX Research</li>
+                                  <li>UI Design</li>
+                                  <li>Competitive Analysis</li>
+                                  <li>User Personas</li>
+                                  <li>User Flows</li>
+                                  <li>Wireframes</li>
+                                  <li>Prototype</li>
+                                  <li>User Testing</li>
+                                  <li>User Interviews</li>
+                                  <li>Story Telling</li>
+                                  <li>Video Editing</li>
+                                  <li>Grahpic Design</li>
+                                  <li>Visual Effects</li>
+                                  <li>Compositing</li>
+                                  <li>Animation</li>
+                                  <li>Illustrations</li>
+                                  <li>Print Media</li>
+                                  <li>Frontend Web Development</li>
+                                </ul>
+                            </div>
+                            <div class="column col-md-6"><!--Column two, row two-->
+                                <h3>Tools I use</h3>
+                                <ul>
+                                  <li>Figma</li>
+                                  <li>Adobe XD</li>
+                                  <li>Adobe Premiere Pro</li>
+                                  <li>Adobe Photoshop</li>
+                                  <li>Adobe Illustrator</li>
+                                  <li>Adobe After Effects</li>
+                                  <li>Adobe InDesign</li>
+                                  <li>Adobe Bridge</li>
+                                  <li>NukeX</li>
+                                  <li>FlexiDesign</li>
+                                  <li>Lightwave</li>
+                                  <li>HTML</li>
+                                  <li>CSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 <!-- For the footer  -->
-	<footer id="contact">
-		<div class="container">
-            <h2>Get in touch</h2>
-            <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
-            <div>
-                <a href="mailto:kirstenmatan@gmail.com" class="button contact">Email me</a>
-            </div>
-            <ul class="social">
-            <!--Social Media Layout and Placeholders-->
-            <!--For students, the images below should be updated with real svgs and links should be updated-->
-                <li>
-                  <a href="https://www.linkedin.com/in/kirsten-v-5a727855/" target="_blank">
-                        <img src="img/linkedin_icon.svg" alt="linkedin_icon">
-                    </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/kvandepas" target="_blank">
-                        <img src="img/twitter_icon.svg" alt="twitter_icon">
-                    </a>
-                </li>
-                <li>
-                  <a href="https://www.behance.net/kirstenvandepas" target="_blank">
-                        <img src="img/behance_icon.svg" alt="behance_round_icon">
-                    </a>
-                </li>
-            </ul>
+	<footer id="contact" style="clear: both;">
+    <div class="container">
+          <h2>Get in touch</h2>
+          <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
+          <div>
+              <a href="mailto:kirstenmatan@gmail.com" class="button contact">Email me</a>
+          </div>
+          <ul class="social">
+          <!--Social Media Layout and Placeholders-->
+          <!--For students, the images below should be updated with real svgs and links should be updated-->
+              <li>
+                <a href="https://www.linkedin.com/in/kirsten-v-5a727855/" target="_blank">
+                      <img src="img/linkedin_icon.svg" alt="linkedin_icon">
+                  </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/kvandepas" target="_blank">
+                      <img src="img/twitter_icon.svg" alt="twitter_icon">
+                  </a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/kirstenvandepas" target="_blank">
+                      <img src="img/behance_icon.svg" alt="behance_round_icon">
+                  </a>
+              </li>
+          </ul>
 
-            <p>Copyright Kirsten Vandepas 2022</p>
-        </div>
+          <p>Copyright Kirsten Vandepas 2022</p>
+      </div>
 
-	</footer>
-  <script src="js/script.js"></script>
-  </body>
+</footer>
+<script src="js/script.js"></script>
+</body>
 </html>

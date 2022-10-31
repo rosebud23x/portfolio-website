@@ -147,7 +147,6 @@ a:focus {
 /*style the <header> element*/
 header {
   background-color: #e3e6cc;
-  text-align: center;
   padding: 10px 0;
   position: relative;
   box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -195,6 +194,10 @@ nav > ul > li > a {
 #contact {
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
 
@@ -324,6 +327,15 @@ Medium devices (640px and larger)
     float: left;
     padding-bottom: 40px;
   }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
 
 }
 

@@ -154,7 +154,7 @@ header {
 
 /*style the logo*/
 header .logo {
-  max-width: 150px;
+  max-width: 250px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -218,6 +218,8 @@ nav > ul > li > a {
   height: 32px;
   width: 32px;
 }
+
+
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /* Layout styling */

@@ -8,7 +8,7 @@
     <link href="img/fav/fav.png" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://use.fontawesome.com/fc512f88c8.js"></script>
+    <script src="https://kit.fontawesome.com/bfd2d3da4e.js" crossorigin="anonymous"></script>
     <title>Index page</title>
   </head>
   <body id="index-page">
@@ -19,10 +19,16 @@
           <img class="logo" src="img/logo.svg" alt="Kirsten Vandepas UX UI logo" >
           <nav>
               <ul class="navigation">
-                <li class="active"><a href="index.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    <li class="active"><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                    <li>
+                        <p id="click_advance">
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <i class="fas fa-bars"></i>
+                            </a>
+                        </p>
+                    </li>
               </ul>
             </nav>
 		</div>

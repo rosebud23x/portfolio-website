@@ -196,8 +196,40 @@ nav > ul > li > a {
     padding: 20px;
 }
 
+/*for the hamburger menu*/
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
 .navtoggle li:not(:last-child) {
-  display: none;
+    display: none;
+  }
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  background-color: #f2f2f2;
+  margin-top: 25px;
+  margin-bottom: -51%;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 

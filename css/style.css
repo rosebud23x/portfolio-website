@@ -217,7 +217,7 @@ nav > ul > li > a {
 }
 
 .navtoggle.responsive nav {
-  background-color: #f2f2f2;
+  background-color: #e3e6cc;
   margin-top: 25px;
   margin-bottom: -51%;
 }
@@ -225,7 +225,7 @@ nav > ul > li > a {
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 0px solid rgba(255,127,80,0.5);
 }
 
 .navtoggle.responsive li:last-child  {

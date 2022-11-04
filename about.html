@@ -8,25 +8,31 @@
     <link href="img/fav/fav.png" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://use.fontawesome.com/fc512f88c8.js"></script> 
+    <script src="https://kit.fontawesome.com/bfd2d3da4e.js" crossorigin="anonymous"></script>
     <title>About Kirsten Vandepas</title>
   </head>
   <body id="about-page">
     <!-- For the header -->
-	<header>
-		<!-- For the navigation -->
-		<div class="container">
-            <a href="index.html">
-			 <img src="img/logo.png" class="logo" alt="Logo" >
-            </a>
-            <nav>
+    <header>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <img class="logo" src="img/logo.svg" alt="Kirsten Vandepas UX UI logo" >
+          <nav>
               <ul class="navigation">
-                <li><a href="index.html">Work</a></li>
-                <li class="active"><a href="about.html">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                    <li class="active"><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                    <li>
+                        <p id="click_advance">
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                            <i class="fas fa-bars"></i>
+                            </a>
+                        </p>
+                    </li>
               </ul>
             </nav>
 		</div>
+  </div>
 	</header>
 
     <main>

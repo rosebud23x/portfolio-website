@@ -1,6 +1,6 @@
-/*-------------------------------------------Start Section---------------------------------------------*/
+/* start section */
 
-/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
+/* setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
 * {
   box-sizing: border-box;
 }
@@ -15,8 +15,8 @@ Button: Darker Purple #736c7b
 */
 
 
-/*--------------------------------------------End Section---------------------------------------------*/
-/*-------------------------------------------Start Section---------------------------------------------*/
+/* --------------------------------------------End Section--------------------------------------------- */
+/* -------------------------------------------Start Section--------------------------------------------- */
 /*default body settings*/
 
 body {
@@ -36,8 +36,6 @@ h1 {
   font-size: 2.75em;
   font-weight: 700;
 }
-
-
 
 h2 {
   font-size: 2.25em;
@@ -89,7 +87,6 @@ a:focus {
   color: #ff8285;
   text-decoration: none;
 }
-
 
 /*CSS code for the button class*/
 .button {

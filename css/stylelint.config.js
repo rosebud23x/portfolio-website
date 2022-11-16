@@ -1,14 +1,14 @@
-"use strict"
+'use strict'
 
 module.exports = {
-  "rules": {
-    "at-rule-no-unknown": true,
-    "block-no-empty": true,
-    "color-no-invalid-hex": true,
-    "comment-no-empty": true,
-    "declaration-block-no-duplicate-properties": [ true, {
-      ignore: ["consecutive-duplicates-with-different-values"],
-    } ],
+  rules: {
+    'at-rule-no-unknown': true,
+    'block-no-empty': true,
+    'color-no-invalid-hex': true,
+    'comment-no-empty': true,
+    'declaration-block-no-duplicate-properties': [true, {
+      ignore: ['consecutive-duplicates-with-different-values']
+    }],
     "declaration-block-no-redundant-longhand-properties": true,
     "declaration-block-no-shorthand-property-overrides": true,
     "font-family-no-duplicate-names": true,
@@ -26,10 +26,10 @@ module.exports = {
     "shorthand-property-no-redundant-values": true,
     "string-no-newline": true,
     "unit-no-unknown": true,
-    "at-rule-empty-line-before": [ "always", {
+    "at-rule-empty-line-before": ['always', {
       except: [
-        "blockless-after-same-name-blockless",
-        "first-nested",
+        'blockless-after-same-name-blockless',
+        'first-nested",
       ],
       ignore: ["after-comment"],
     } ],

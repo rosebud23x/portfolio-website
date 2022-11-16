@@ -1,34 +1,39 @@
 /* start section */
 
-/* setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
+/* setting the default width of an element to include the padding and the border via the box-sizing property and border-box value */
+
 * {
   box-sizing: border-box;
 }
 
 /*
 Colors used
-Primary Color: Dark Purple #8B7999
+Primary Color: Dark Purple #705f7d
 Seconday Color: Pink #ff8285
 Other colors: Light Purple #dacce5, Dark Green #94996a, Light Green #e3e6cc,
 Off White #fefvff
 Button: Darker Purple #736c7b
 */
 
+/* End Section */
 
-/* --------------------------------------------End Section--------------------------------------------- */
-/* -------------------------------------------Start Section--------------------------------------------- */
-/*default body settings*/
+/* Start Section */
+
+/* default body settings */
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #8B7999;
+  color: #705f7d;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -48,63 +53,63 @@ h3 {
   margin-top: -8px;
 }
 
-#about-page h3 { margin-top: 0;}
+#about-page h3 { margin-top: 0; }
 
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
 
-
-/*setting images to full-width*/
+/* setting images to full-width */
 img {
   width: 100%;
 }
 
-/*change the default link color to your primary color (copied from your comments at the top of the document)*/
+/* change the default link color to your primary color (copied from your comments at the top of the document) */
 a {
   color: #ff7f50;
   text-decoration: none; /* No underlining */
 }
+
 a:hover {
   color: #94996a;
   text-decoration: none; /* Underlining when hovering over a link */
 }
 
-/*style the current nav item pink*/
+/* style the current nav item pink */
 .active a {
-    color: #ff8285;
-    text-decoration: underline;
+  color: #ff8285;
+  text-decoration: underline;
 }
 
 a:active { /* selected link */
   color: #ff8285;
 }
 
-/*Pseudo classes for Accessibility for Across the Web*/
+/* Pseudo classes for Accessibility for Across the Web */
 a:hover,
 a:focus {
   color: #ff8285;
   text-decoration: none;
 }
 
-/*CSS code for the button class*/
+/* CSS code for the button class */
 .button {
   display: inline-block;
-  background-color: #736C7B;
+  background-color: #736c7b;
   color: white;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid ##3F3C44;
+  border-bottom: 2px solid ##3f3c44;
   transition: 0.8s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  color: #ffffff;
-  background-color: #736C7B;
+  color: #fff;
+  background-color: #736c7b;
   text-decoration: none;
 }
 
@@ -113,50 +118,51 @@ a:focus {
   text-decoration: none;
 }
 
-
-/*button rules for the mailto button*/
+/* button rules for the mailto button */
 .button.contact {
   background-color: transparent;
-  color: #8B7999;
+  color: #705f7d;
   text-transform: uppercase;
-  border: 2px solid #8B7999;
+  border: 2px solid #705f7d;
   transition: 0.8s opacity;
 }
 
-/*button class hover and active state*/
+/* button class hover and active state */
 
 .button.contact:hover {
   opacity: 0.8;
   background-color: #ff8285;
-  color: #ffffff;
+  color: #fff;
 }
 
 .button.contact:active {
   opacity: 0.8;
   background-color: #ff8285;
-  color: #ffffff;
+  color: #fff;
 }
 
-/*--------------------------------------------End Section---------------------------------------------*/
-/*-------------------------------------------Start Section---------------------------------------------*/
-/*stye the page sections*/
+/* --------------------------------------------End Section--------------------------------------------- */
 
-/*style the <header> element*/
+/* -------------------------------------------Start Section--------------------------------------------- */
+
+/* stye the page sections* /
+
+/* style the <header> element */
 header {
   background-color: #e3e6cc;
   padding: 10px 0;
   position: relative;
-  box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0 7px 5px 0 rgba(50, 50, 50, 0.75);
 }
 
-/*style the logo*/
+/* style the logo */
 header .logo {
   max-width: 250px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/*Navigation Styling*/
+/* Navigation Styling */
 nav {
   display: inline-block;
 }
@@ -174,7 +180,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #8B7999;
+  color: #8b7999;
 }
 
 #hero {
@@ -189,11 +195,11 @@ nav > ul > li > a {
 }
 
 #contact {
-    background-color: #f2f2f2;
-    padding: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
-/*for the hamburger menu*/
+/* for the hamburger menu */
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -202,14 +208,15 @@ nav > ul > li > a {
 }
 
 .navtoggle li:not(:last-child) {
-    display: none;
-  }
+  display: none;
+}
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -219,18 +226,17 @@ nav > ul > li > a {
   margin-bottom: -51%;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 0px solid rgba(255,127,80,0.5);
+  border-top: 0 solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
-
-/*Style the social icons*/
+/* Style the social icons */
 .social {
   list-style-type: none;
   padding: 0;
@@ -248,9 +254,10 @@ nav > ul > li > a {
   width: 32px;
 }
 
+/* --------------------------------------------End Section--------------------------------------------- */
 
-/*--------------------------------------------End Section---------------------------------------------*/
-/*-------------------------------------------Start Section---------------------------------------------*/
+/* -------------------------------------------Start Section--------------------------------------------- */
+
 /* Layout styling */
 
 .container {
@@ -263,9 +270,12 @@ nav > ul > li > a {
 
 #work .row { padding-bottom: 20px; }
 
-/*--------------------------------------------End Section---------------------------------------------*/
-/*-------------------------------------------Start Section---------------------------------------------*/
-/*SVG anamation*/
+/* --------------------------------------------End Section--------------------------------------------- */
+
+/* -------------------------------------------Start Section--------------------------------------------- */
+
+/* SVG anamation */
+
 .svg-animation {
   width: 100%;
   max-width: 100%;
@@ -273,9 +283,9 @@ nav > ul > li > a {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% { fill: #edc655; }
+  50% { fill: #fcffad; }
+  100% { fill: #f76414; }
 }
 
 .sun {
@@ -286,15 +296,15 @@ nav > ul > li > a {
   animation-timing-function: linear;
 }
 
-/*single line...
+/* single line...
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
 */
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
 }
 
 .cloud-front {
@@ -305,32 +315,36 @@ nav > ul > li > a {
   animation-timing-function: linear;
 }
 
-/*single line...
+/* single line...
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
 */
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-/*--------------------------------------------End Section---------------------------------------------*/
-/*-------------------------------------------Start Section---------------------------------------------*/
-/*Media Queries*/
 
-/*clear page flow*/
+/* --------------------------------------------End Section--------------------------------------------- */
+
+/* -------------------------------------------Start Section--------------------------------------------- */
+
+/* Media Queries */
+
+/* clear page flow */
+
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/*float all columns left*/
+/* float all columns left */
 [class*="col-"] {
   padding: 10px;
 }
@@ -364,12 +378,9 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:last-child {
-  display: none;
+    display: none;
+  }
 }
-
-
-}
-
 
 /* ==============================
 Large devices (1024px or larger)
@@ -380,6 +391,7 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
   .col-lg-7 {
     width: 60%;
   }
@@ -393,12 +405,13 @@ Large devices (1024px or larger)
     float: left;
     padding-bottom: 40px;
   }
+
   .col-lg-8 {
     width: 40%;
     float: right;
   }
 
-   #about-page .col-md-6 {
-     width: 100%;
+  #about-page .col-md-6 {
+    width: 100%;
   }
 }

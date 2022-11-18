@@ -13,6 +13,7 @@ Seconday Color: Pink #ff8285
 Other colors: Light Purple #dacce5, Dark Green #94996a, Light Green #e3e6cc,
 Off White #fefvff
 Button: Darker Purple #736c7b
+Light Gray #ebebeb
 */
 
 /* End Section */
@@ -102,7 +103,7 @@ a:focus {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid ##3f3c44;
+  border-bottom: 2px solid ###ebebeb;
   transition: 0.8s opacity;
 }
 
@@ -149,7 +150,7 @@ a:focus {
 
 /* style the <header> element */
 header {
-  background-color: #e3e6cc;
+  background-color: #ebebeb;
   padding: 10px 0;
   position: relative;
   box-shadow: 0 7px 5px 0 rgba(50, 50, 50, 0.75);
@@ -180,11 +181,11 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #8b7999;
+  color: #705f7d;
 }
 
 #hero {
-  background-color: #e3e6cc;
+  background-color: #fff;
   padding: 40px 0;
   display: inline-block;
   width: 100%;
@@ -221,7 +222,7 @@ nav > ul > li > a {
 }
 
 .navtoggle.responsive nav {
-  background-color: #e3e6cc;
+  background-color: #ebebeb;
   margin-top: 25px;
   margin-bottom: -51%;
 }

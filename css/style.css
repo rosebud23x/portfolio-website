@@ -9,11 +9,11 @@
 /*
 Colors used
 Primary Color: Dark Purple #705f7d
-Seconday Color: Pink #ff8285
-Other colors: Light Purple #dacce5, Dark Green #94996a, Light Green #e3e6cc,
+Seconday Color:Light Green #e3e6cc
+Other colors: Light Purple #dacce5
 Off White #fefvff
 Button: Darker Purple #736c7b
-Light Gray #ebebeb
+
 */
 
 /* End Section */
@@ -79,18 +79,18 @@ a:hover {
 
 /* style the current nav item pink */
 .active a {
-  color: #ff8285;
+  color: #e3e6cc;
   text-decoration: underline;
 }
 
 a:active { /* selected link */
-  color: #ff8285;
+  color: #e3e6cc;
 }
 
 /* Pseudo classes for Accessibility for Across the Web */
 a:hover,
 a:focus {
-  color: #ff8285;
+  color: #e3e6cc;
   text-decoration: none;
 }
 
@@ -103,7 +103,7 @@ a:focus {
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid ###ebebeb;
+  border-bottom: 2px solid ###705f7d;
   transition: 0.8s opacity;
 }
 
@@ -132,13 +132,13 @@ a:focus {
 
 .button.contact:hover {
   opacity: 0.8;
-  background-color: #ff8285;
+  background-color: #e3e6cc;
   color: #fff;
 }
 
 .button.contact:active {
   opacity: 0.8;
-  background-color: #ff8285;
+  background-color: #e3e6cc;
   color: #fff;
 }
 
@@ -150,10 +150,10 @@ a:focus {
 
 /* style the <header> element */
 header {
-  background-color: #ebebeb;
+  background-color: #705f7d;
   padding: 10px 0;
   position: relative;
-  box-shadow: 0 7px 5px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 0 7px 5px 0 rgba(75, 75, 75, 0.75);
 }
 
 /* style the logo */
@@ -181,7 +181,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #705f7d;
+  color: #fff;
 }
 
 #hero {
@@ -222,7 +222,7 @@ nav > ul > li > a {
 }
 
 .navtoggle.responsive nav {
-  background-color: #ebebeb;
+  background-color: #705f7d;
   margin-top: 25px;
   margin-bottom: -51%;
 }
